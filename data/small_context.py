@@ -66,7 +66,7 @@ def get_dataset(dsname):
         series = series.iloc[::2]
     return series
 
-def get_datasets(n=-1,testfrac=0.2):
+def   get_datasets(n=-1,testfrac=0.2):
     datasets = [
         'AirPassengersDataset',
         'AusBeerDataset',
@@ -76,6 +76,7 @@ def get_datasets(n=-1,testfrac=0.2):
         'WineDataset',
         'WoolyDataset',
         'HeartRateDataset',
+        'covid'
     ]
     datas = []
     for i,dsname in enumerate(datasets):
